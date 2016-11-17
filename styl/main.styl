@@ -35,43 +35,50 @@ blue = rgb(48, 129, 180)
 navy = rgb(29, 41, 53)
 
 body
-  background-color: lightblue
+  background-color: navy
   color: blue
+  min-height: 100%
 
 #hero
-  text-align: center
-  padding: 8rem 0
-
-  img
-    width: 90%
+  background-color: lightblue
+  padding: 1rem
 
   p
     font-weight: 700
     font-size: 1.6rem
-    padding: 2rem
+    line-height: 2rem
+    padding: 1rem
+    margin-bottom: 1rem
+    text-align: center
 
-  .button
-    font-size: 2rem
+input[type="submit"].button-primary
+  background-color: blue
+  border: 0
 
-  .joinlist
-    width: 80%
-    display: inline-block
-    text-decoration: none
-    background-color: blue
-    color: white
-    font-size: 2rem
-    padding: 1.5rem
-    border-radius: 4px
-    transition: 0.15s linear
+  &:hover
+    background-color: lighten(blue, 8)
 
-    &:hover
-      background-color: navy
+#signup
+  background-color: navy
+  padding: 4rem
+  color: white
+
+#mce-EMAIL
+  width: 80%
 
 
 @media (min-width: 720px)
-  #hero
-    img
-      width: 400px
 
-    .joinlist
-      width: 400px
+  #hero
+    padding: 5rem 0
+
+    .column
+      padding: 1rem
+
+    p
+      margin-top: 1rem
+      font-size: 3rem
+      line-height: 4rem
+
+  #mce-EMAIL
+    width: 50%
