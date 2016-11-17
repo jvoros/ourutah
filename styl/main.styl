@@ -1,0 +1,77 @@
+/*
+
+  A Stylus Implementation of the Skeleton Framework
+
+  Skeleton Framework | 1.0.8 | MIT | Feb 22nd, 2016
+  skeleton-framework.github.io
+
+  Stylus | MIT
+  stylus-lang.com
+
+  Normalize CSS | v5.0.0 | MIT License |
+  github.com/necolas/normalize.css
+
+*/
+
+@import "normalize.styl"
+@import "colors"
+@import "grid"
+@import "base"
+@import "typography"
+@import "links"
+@import "buttons"
+@import "forms"
+@import "lists"
+@import "code"
+@import "tables"
+@import "spacing"
+@import "floats-positioning"
+@import "utilities"
+@import "misc"
+// @import "mediaqueries" use to copy media queries where needed.
+
+lightblue = rgb(247, 250, 255)
+blue = rgb(48, 129, 180)
+navy = rgb(29, 41, 53)
+
+body
+  background-color: lightblue
+  color: blue
+
+#hero
+  text-align: center
+  padding: 8rem 0
+
+  img
+    width: 90%
+
+  p
+    font-weight: 700
+    font-size: 1.6rem
+    padding: 2rem
+
+  .button
+    font-size: 2rem
+
+  .joinlist
+    width: 80%
+    display: inline-block
+    text-decoration: none
+    background-color: blue
+    color: white
+    font-size: 2rem
+    padding: 1.5rem
+    border-radius: 4px
+    transition: 0.15s linear
+
+    &:hover
+      background-color: navy
+
+
+@media (min-width: 720px)
+  #hero
+    img
+      width: 400px
+
+    .joinlist
+      width: 400px
